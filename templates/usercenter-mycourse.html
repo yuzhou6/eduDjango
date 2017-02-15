@@ -1,6 +1,6 @@
 {% extends 'usercenter-base.html' %}
 {% block title %} 个人信息 - 暮学在线教育 {% endblock %}
-
+{% load staticfiles %}
 {% block custom_bread %}
     <section>
         <div class="wp">
@@ -25,9 +25,9 @@
 			<div class="companycenter">
 				<div class="group_list brief">
                     {% for user_course in user_courses %}
-                        <div class="module1_5 box">
+                        <div class="module1_5 box post-item">
                             <a href="{% url 'course:course_detail' user_course.course.id %}">
-                                <img width="214" height="190" class="scrollLoading" src="{{ MEDIA_URL }}{{ user_course.course.image }}"/>
+                                <img  width="214" height="190" class="scrollLoading" src="{{ MEDIA_URL }}{{ user_course.course.image }}"/>
                             </a>
                             <div class="des">
                                 <a href="{% url 'course:course_detail' user_course.id %}"><h2>{{ user_course.course.name }}</h2></a>

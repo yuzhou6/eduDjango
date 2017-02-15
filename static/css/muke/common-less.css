@@ -1759,9 +1759,9 @@ fieldset[disabled] .btn {
     border-color: #4d5559;
     margin-top: -5px;
 }
-.user-card-box:hover .user-card-item img {
-    border-color: #f22c1a;
-}
+/*.user-card-box:hover .user-card-item img {*/
+    /*border-color: #f22c1a;*/
+/*}*/
 .visible-xs-block {
     display: none;
 }

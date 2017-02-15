@@ -1,3 +1,4 @@
+# coding:utf-8
 """
 Django settings for mxonline project.
 
@@ -27,7 +28,7 @@ SECRET_KEY = '=j4f$m-5w%@cy!8izxz165rhpleg8r)ap_irsu^&jt$wa6(lms'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -49,7 +50,8 @@ INSTALLED_APPS = [
     "xadmin",
     "crispy_forms",
     'captcha',
-    'pure_pagination'
+    'pure_pagination',
+    'DjangoUeditor'
 ]
 
 AUTH_USER_MODEL = "users.UserProfile"
@@ -96,8 +98,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': "mxonline",
         "USER": "root",
-        "PASSWORD": "wyz123",
-        "HOST": "127.0.0.1"
+        "PASSWORD": "wyz6811577",
+        "HOST": "108.61.216.114"
     }
 }
 
@@ -152,3 +154,6 @@ EMAIL_FROM = "lucat369@163.com"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# 恢复
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')

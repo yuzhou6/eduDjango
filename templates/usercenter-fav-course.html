@@ -17,21 +17,17 @@
     <div class="right">
         <div class="personal_des Releasecont">
             <div class="head">
-                <ul class="tab_header messagehead">
-                    <li class="active"><a href="{% url 'users:myfav_org' %}">课程机构</a></li>
-                    <li><a href="{% url 'users:myfav_teacher' %}">授课教师 </a></li>
-                    <li><a href="{% url 'users:myfav_course' %}">公开课程</a></li>
-                </ul>
+                <h1>我的收藏</h1>
             </div>
+
         </div>
         <div class="personal_des permessage">
             <div class="head">
                 <ul class="tab_header messagehead">
-                    <li><a href="usercenter-fav-course.html">课程机构</a></li>
-                    <li><a href="usercenter-fav-teacher.html">授课教师 </a></li>
-                    <li class="active"><a href="usercenter-fav-course.html">公开课程</a></li>
+                    <li><a href="{% url 'users:myfav_org' %}">课程机构</a></li>
+                    <li><a href="{% url 'users:myfav_teacher' %}">授课教师 </a></li>
+                    <li  class="active"><a href="{% url 'users:myfav_course' %}">公开课程</a></li>
                 </ul>
-
             </div>
             <div class="companycenter">
                 <div class="group_list brief">
@@ -49,7 +45,8 @@
                             </div>
                             <div class="bottom">
                                 <span class="fl">{{ fav_course.course_org.name }}</span>
-                                <span class="delete-group fr jsDeleteFav_course" data-favid="{{ fav_course.id }}"></span>
+                                <span class="delete-group fr jsDeleteFav_course"
+                                      data-favid="{{ fav_course.id }}"></span>
                             </div>
                         </div>
                     {% endfor %}

@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views.static import serve
 from mxonline.settings import MEDIA_ROOT
+    # 恢复
+    # STATIC_ROOT
 import xadmin
 
 from users.views import LoginView, RegisterView, ActiveUserView,\
@@ -48,10 +50,20 @@ urlpatterns = [
     # 配置上传文件的访问处理
     url(r'^media/(?P<path>.*$)', serve, {"document_root": MEDIA_ROOT}),
 
+    # 配置上传文件的访问处理
+    # 恢复
+    # url(r'^static/(?P<path>.*$)', serve, {"document_root": STATIC_ROOT}),
+
     # 课程相关的 url 配置
     url(r'^users/', include('users.urls', namespace='users')),
 
+    # 富文本相关 url
+    url(r'^ueditor/',include('DjangoUeditor.urls' )),
+
 ]
+
+handler404 = 'users.views.page_not_found'
+handler500 = 'users.views.page_error'
 
 
 

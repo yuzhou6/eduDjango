@@ -56,9 +56,6 @@ class CourseDetailView(View):
     def get(self, request, course_id):
         course = Course.objects.get(id=course_id)
 
-        for user_course in course.get_learn_users():
-            print user_course.user.image
-
         # 课程点击数
         course.click_nums += 1
         course.save()

@@ -11,6 +11,34 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/myhover.css' %}">
+
+    <style>
+        .post-item {
+            border-radius: 6px;
+            border: solid #dedede thin;
+            background: #fff;
+            -webkit-transition: all .5s ease 0s;
+            -moz-transition: all .5s ease 0s;
+            -o-transition: all .5s ease 0s;
+        }
+
+        .left:hover {
+            box-shadow: 10px 10px 20px rgba(67, 72, 84, 0.3);
+            transform: translate(0px, -5px);
+            transition: all 0.5s ease 0s;
+        }
+
+        .company:hover {
+            box-shadow: 10px 10px 20px rgba(67, 72, 84, 0.3);
+            transform: translate(0px, -5px);
+            transition: all 0.5s ease 0s;
+        }
+
+        a:hover {
+            text-decoration: none
+        }
+    </style>
     {% block custom_css %}
 
     {% endblock %}
@@ -33,6 +61,7 @@
                                 <dd>{{ request.user.nick_name }}<img class="down fr"
                                                                      src="{% static 'images/top_down.png' %}"/></dd>
                                 <dt><img width="20" height="20" src="{{ MEDIA_URL }}{{ request.user.image }}"/></dt>
+
                             </dl>
                             <div class="userdetail">
                                 <dl>
@@ -70,7 +99,7 @@
 
             <div class="middle">
                 <div class="wp">
-                    <a href="{% url 'index' %}"><img class="fl" src="../images/logo.jpg"/></a>
+                    <a href="{% url 'index' %}"><img class="fl" src="{% static 'images/logo.jpg' %}"/></a>
                     <div class="searchbox fr">
                         <div class="selectContainer fl">
                             <span class="selectOption" id="jsSelectOption" data-value="course">
@@ -83,7 +112,7 @@
                             </ul>
                         </div>
                         <input id="search_keywords" class="fl" type="text" value="" placeholder="请输入搜索内容"/>
-                        <img class="search_btn fr" id="jsSearchBtn" src="../images/search_btn.png"/>
+                        <img class="search_btn fr" id="jsSearchBtn" src="{% static 'images/search_btn.png' %}"/>
                     </div>
                 </div>
             </div>
@@ -93,10 +122,11 @@
                 <div class="nav">
                     <div class="wp">
                         <ul>
-                            <li {% if request.path == '/' %} class="active" {% endif %}><a href="{% url 'index' %}">首页</a></li>
+                            <li {% if request.path == '/' %} class="active" {% endif %}><a
+                                    href="{% url 'index' %}">首页</a></li>
                             <li {% if request.path|slice:'7' == '/course' %} class="active" {% endif %}>
                                 <a href="{% url 'course:course_list' %}">
-                                    公开课<img class="hot" src="../images/nav_hot.png">
+                                    公开课<img class="hot" src="{% static 'images/nav_hot.png' %}">
                                 </a>
                             </li>
                             <li {% if request.path|slice:'12' == '/org/teacher' %} class="active" {% endif %}>
