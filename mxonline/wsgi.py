@@ -8,9 +8,13 @@ https://docs.djangoproject.com/en/1.9/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+root = os.path.dirname(__file__)
+sys.path.insert(0, os.path.join(root, '..', 'site-packages'))
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mxonline.settings")
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mxonline.settings")
 
 application = get_wsgi_application()

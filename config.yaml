@@ -1,0 +1,14 @@
+#--config.yaml--#
+name: WeChat
+version: 1
+
+libraries:
+- name: "django"
+  version: "1.9.8"
+
+
+handlers:
+- url: /static
+  static_dir: static
+- media: /media
+  static_dir: media
