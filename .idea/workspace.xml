@@ -2,7 +2,102 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844f0395-3334-49e8-a93e-56df2531ba61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site-packages/PIL/Image.py" afterPath="$PROJECT_DIR$/site-packages/PIL/Image.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/BdfFontFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/BmpImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/BufrStubImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ContainerIO.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/CurImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/DcxImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/DdsImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/EpsImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ExifTags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/FitsStubImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/FliImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/FontFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/FpxImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/FtexImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/GbrImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/GdImageFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/GifImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/GimpGradientFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/GimpPaletteFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/GribStubImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/Hdf5StubImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/IcnsImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/IcoImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/Image.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageChops.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageCms.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageColor.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageDraw.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageDraw2.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageEnhance.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageFilter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageFont.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageGrab.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageMath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageMode.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageMorph.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageOps.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImagePalette.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImagePath.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageQt.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageSequence.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageShow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageStat.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageTk.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageTransform.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImageWin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/ImtImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/IptcImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/Jpeg2KImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/JpegImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/JpegPresets.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/McIdasImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/MicImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/MpegImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/MpoImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/MspImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/OleFileIO.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PSDraw.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PaletteFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PalmImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PcdImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PcfFontFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PcxImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PdfImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PixarImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PngImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PpmImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PsdImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/PyAccess.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/SgiImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/SpiderImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/SunImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/TarIO.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/TgaImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/TiffImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/TiffTags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/WalImageFile.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/WebPImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/WmfImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/XVThumbImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/XbmImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/XpmImagePlugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_binary.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_imaging.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_imagingcms.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_imagingft.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_imagingmath.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_imagingmorph.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_imagingtk.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_tkinter_finder.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_util.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/_webp.pyd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/site-packages/PIL/features.py" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,7 +164,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site-packages/captcha/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
@@ -77,16 +172,6 @@
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Image.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/site-packages/PIL/Image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -106,16 +191,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="63">
               <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_util.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/site-packages/PIL/_util.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -296,24 +371,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mxonline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mxonline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site-packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PIL" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -668,9 +725,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="202" y="12" width="1344" height="788" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29442772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29442772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1152,8 +1209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="65" column="28" lean-forward="false" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        <state relative-caret-position="204">
+          <caret line="68" column="73" lean-forward="true" selection-start-line="68" selection-start-column="73" selection-end-line="68" selection-end-column="73" />
           <folding />
         </state>
       </provider>
