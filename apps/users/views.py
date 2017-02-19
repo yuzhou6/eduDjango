@@ -130,9 +130,13 @@ class UserInfoView(LoginRequiredMixin, View):
     用户个人信息
     """
     def get(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
         return render(request, "usercenter-info.html", {})
 
     def post(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
         user_info_form = UserInfoForm(request.POST, instance=request.user)
         if user_info_form.is_valid():
             user_info_form.save()
@@ -147,6 +151,9 @@ class UploadImageView(LoginRequiredMixin, View):
     用户头像
     """
     def post(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         image_form = UploadImageForm(request.POST, request.FILES, instance=request.user)
         if image_form.is_valid():
             image_form.save()
@@ -225,6 +232,9 @@ class UpdateEmailView(LoginRequiredMixin, View):
     修改个人邮箱
     """
     def post(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         email = request.POST.get("email", "")
         code = request.POST.get("code", "")
 
@@ -243,6 +253,9 @@ class MyCourseView(LoginRequiredMixin, View):
     我的课程
     """
     def get(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         user_courses = UserCourse.objects.filter(user=request.user)
         return render(request, "usercenter-mycourse.html", {
             "user_courses": user_courses
@@ -254,6 +267,9 @@ class MyFavOrgView(LoginRequiredMixin, View):
     我收藏的机构
     """
     def get(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         org_list = []
         fav_orgs = UserFavorite.objects.filter(user=request.user, fav_type=2)
         for fav_org in fav_orgs:
@@ -271,6 +287,9 @@ class MyFavTeacherView(LoginRequiredMixin, View):
     我收藏的机构
     """
     def get(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         teacher_list = []
         fav_teachers = UserFavorite.objects.filter(user=request.user, fav_type=3)
         for fav_teacher in fav_teachers:
@@ -289,6 +308,9 @@ class MyFavCourseView(LoginRequiredMixin, View):
     """
 
     def get(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         course_list = []
         fav_courses = UserFavorite.objects.filter(user=request.user, fav_type=1)
         for fav_course in fav_courses:
@@ -307,6 +329,9 @@ class MyMessageView(LoginRequiredMixin, View):
     """
 
     def get(self, request):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         all_message = UserMessage.objects.filter(user=request.user.id)
 
         # 对个人消息进行分页

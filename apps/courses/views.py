@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
+from django.core.urlresolvers import reverse
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.views.generic import View
 from pure_pagination import Paginator, EmptyPage, PageNotAnInteger
@@ -89,6 +91,9 @@ class CourseInfoView(LoginRequiredMixin, View):
     课程章节信息
     """
     def get(self, request, course_id):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
+
         course = Course.objects.get(id=int(course_id))
 
         # 增加点击数
@@ -157,6 +162,8 @@ class CommentsView(LoginRequiredMixin, View):
     课程评论
     """
     def get(self, request, course_id):
+        if not request.user.is_authenticated():
+            return HttpResponseRedirect(reverse("login"))
         course = Course.objects.get(id=int(course_id))
         all_resources = CourseResource.objects.get(course=course)
         all_comments = CourseComments.objects.all()
