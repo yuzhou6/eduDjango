@@ -97,10 +97,10 @@ WSGI_APPLICATION = 'mxonline.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "",
-        "USER": "",
-        "PASSWORD": "",
-        "HOST": ""
+        'NAME': "mxonline",
+        "USER": "root",
+        "PASSWORD": "wyz6811577",
+        "HOST": "108.61.216.114"
     }
 }
 
@@ -148,10 +148,10 @@ STATICFILES_DIRS = (
 
 EMAIL_HOST = "smtp.163.com"
 EMAIL_PORT = 25
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'lucat369@163.com'
+EMAIL_HOST_PASSWORD = 'wyz6811578'
 EMAIL_USE_TLS = False
-EMAIL_FROM = ""
+EMAIL_FROM = "lucat369@163.com"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
