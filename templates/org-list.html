@@ -18,7 +18,7 @@
 <section>
 	<div class="wp butler_list_box list">
 	<div class='left'>
-		<div class="listoptions">
+		<div class="listoptions post-item">
 			<ul>
 				<li>
 					<h2>机构类别</h2>
@@ -47,7 +47,7 @@
 		</div>
 		<div class="all">共<span class="key">{{ org_nums }}</span>家</div>
 		<div class="butler_list company list">
-		<div class="layout">
+		<div class="layout ">
 			<div class="head">
 				<ul class="tab_header">
 					<li class="{% if sort == '' %} active {% endif %}"><a href="?city={{ city.id }}&ct={{ category }}">全部</a> </li>
@@ -57,7 +57,7 @@
 			</div>
 
             {% for course_org in all_orgs.object_list %}
-                <dl class="des difdes">
+                <dl class="des difdes post-item">
                     <dt>
                         <a href="{% url 'org:org_home' course_org.id %}">
                             <img width="200" height="120" class="scrollLoading" data-url="{{ MEDIA_URL }}{{ course_org.image }}"/>
@@ -65,7 +65,7 @@
                     </dt>
                     <dd>
                         <div class="clearfix">
-                             <a href="org-detail-homepage.html">
+                             <a href="{% url 'org:org_home' course_org.id %}">
                                  <h1>{{ course_org.name }}</h1>
                                  <div class="pic fl">
 
@@ -88,7 +88,7 @@
                             </li>
                         </ul>
                     </dd>
-                    <div class="buy start_groupbuy jsShowPerfect2" data-id="22"><br/>联系<br/>服务</div>
+                    <div class="buy start_groupbuy jsShowPerfect2" data-id="22"><br/><a href="{% url 'org:org_home' course_org.id %}"   style="color: #3b4249">联系<br/>服务</a></div>
                 </dl>
             {% endfor %}
 
@@ -121,19 +121,19 @@
         </div>
 		</div>
 	</div>
-	<div class="right companyright">
+	<div class="right companyright post-item">
 			<div class="head">我要学习</div>
 			<form class="rightform" id="jsStayForm">
 				<div>
-                    <img src="../images/rightform1.png"/>
+                    <img src="{% static 'images/rightform1.png' %}"/>
                     <input type="text" name="name" id="companyName" placeholder="名字" maxlength="25" />
                 </div>
 				<div>
-                    <img src="../images/rightform2.png"/>
+                    <img src="{% static 'images/rightform2.png' %}"/>
                     <input type="text" name="mobile" id="companyMobile" placeholder="联系电话"/>
                 </div>
 				<div>
-                    <img src="../images/rightform3.png"/>
+                    <img src="{% static 'images/rightform3.png' %}"/>
                     <input type="text" name="course_name" id="companyAddress" placeholder="课程名" maxlength="50" />
                 </div>
                 <p class="error company-tips" id="jsCompanyTips"></p>
@@ -143,37 +143,18 @@
             </form>
 		</div>
 
-		<div class="right companyrank layout">
+		<div class="right companyrank layout post-item">
 			<div class="head">授课机构排名</div>
 
-
+            {% for org in all_orgs.object_list %}
                 <dl class="des">
                     <dt class="num fl">1</dt>
                     <dd>
-                        <a href="/company/2/"><h1>慕课网</h1></a>
-                        <p>北京市</p>
+                        <a href="{% url 'org:org_home' org.id %}"><h1>{{ org.name }}</h1></a>
+                        <p>{{ org.address }}</p>
                     </dd>
                 </dl>
-
-                <dl class="des">
-                    <dt class="num fl">2</dt>
-                    <dd>
-                        <a href="/company/2/"><h1>慕课网2</h1></a>
-                        <p>深圳市</p>
-                    </dd>
-                </dl>
-
-                <dl class="des">
-                    <dt class="num fl">3</dt>
-                    <dd>
-                        <a href="/company/2/"><h1>北京大学</h1></a>
-                        <p>北京市</p>
-                    </dd>
-                </dl>
-
-
-
-
+            {% endfor %}
 		</div>
         </div>
 </section>
